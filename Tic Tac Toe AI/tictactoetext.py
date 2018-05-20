@@ -21,10 +21,6 @@ def printBoard(b):
 	print("B    " + b[1][0] + "  " + b[1][1] + "  " + b[1][2])
 	print("C    " + b[2][0] + "  " + b[2][1] + "  " + b[2][2])
 
-def main():
-	b = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]#[[" "] * 3] * 3
-	stillPlaying = True
-	numMoves = 0
 	printBoard(b)
 	print("User, you are playing O. Choose your move.")
 	while stillPlaying:
