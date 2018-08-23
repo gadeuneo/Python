@@ -33,9 +33,9 @@ if __name__ == '__main__':
 	start = time()
 	b = createArray(user_input)
 	
-	if (user_input < 50):
-		print(b)
-		print(bogoSort(b))
+	if (user_input < 20):
+		print("Generated List: ",b)
+		print("Sorted List: ",bogoSort(b))
 	else:
 		bogoSort(b)
 	print("%.2f seconds" % (time() - start))
