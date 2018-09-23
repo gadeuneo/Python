@@ -1,0 +1,109 @@
+8A: What is the type of ord(character)? A: int (integer). Of chr(ord(character)+32)? A: str (string). Of lower? A: str (string) Of lower + chr(ord(character) + 32)? A: str (string)
+
+8B: What happens if you re-run the program with + 32 changed to - 32? A: It adds characters to the end of the message. *$!6)34(%$/,0().!22)6%3!4-)$.)'(49/52&2)%.$*")%"%2
+Alternatively, what happens if you put spaces between the words in the original secret message? A: The spaces become @ symbols.
+
+8C: Instead of drawing a square with 90 degree corners, let's have the turtle draw a hexagon with 60 degree corners. Show the new code. Answer:
+
+import turtle
+fred = turtle.getturtle()
+fred.fillcolor(1.0, 0.0, 0.0)
+fred.begin_fill()
+for i in range(6):
+    fred.forward(200)
+    fred.left(60)
+fred.forward(200)
+fred.end_fill()
+
+8D: Going back to the problem of converting a string from upper-case to lower-case, you should be able to solve it using a for loop that looks like for i in range(len(upper)): How?
+A: 
+upper = 'JDAVISTHEDOLPHINARRIVESATMIDNIGHTYOURFRIENDJBIEBER'
+lower = ''
+for i in range(len(upper)):
+	print(ord(upper[i]))
+	lower = (ord(upper[i]) + 32)
+	print(chr(lower))
+print(lower)
+
+
+9A: Suppose that the program is run with age 17. Exactly which of the three 'if' statements gets executed? What if the age is 19? What if it's 50? What if it's 150?
+A: The first 'if' statement (450). All 'if' statements until the third 'if' statement(400). Through all of the 'if' statements until it reaches the 'else' to 300. The second 'if' statement (500).
+
+9B: What's wrong with the following code? How do you fix it?
+A: The third 'else' statement is not indented properly with the above 'if' statement. To fix it, simply make the indendation of the third if/else statements the same.
+
+10A: The loop takes the value of the starting sum and adds it to the value of the variable 'n'. It continues adding up the values of 'n' until 'n' is 0.
+
+10B: 
+sum = 0
+n = 0
+while n <= 100:
+    sum = n * n + sum
+    n = n + 1
+print(sum)
+
+sum = 0
+n = 0
+for i in range(101):
+    sum = n * n + sum
+    n = n + 1
+print(sum)
+
+10C:
+age = 16
+for i in range(16,35):	
+    if age < 18:
+        rate = 450
+    elif age > 90:
+        rate = 500
+    elif age < 25:
+        rate = 400
+    else:
+        rate = 300
+    print(age, ":", rate)
+    age = age + 1
+
+11A:
+number = 15
+if(number % 2) <= 0:
+	number = number//2
+else:
+	number = number * 3 + 1
+print(number)
+
+11B:After Paul reaches 1, he goes to 4.
+
+11C:
+number = 27
+print(number)
+while number > 1:
+	if(number % 2) <= 0:
+		number = number//2
+	else:
+		number = number * 3 + 1
+	print(number)
+11D:
+number = 16
+mono = 1
+
+while number > 1:
+	if(number % 2) <= 0:
+		number = number//2
+		mono = mono + 1
+	else:
+		number = number * 3 + 1
+		mono = mono + 1
+print(mono)
+
+11E:
+number = 16
+mono = 1
+for i in range(101):
+	while i > 1:
+		if(i % 2) <= 0:
+			i = i//2
+			mono = mono + 1
+		else:
+			i = i * 3 + 1
+			mono = mono + 1
+	print(mono)
