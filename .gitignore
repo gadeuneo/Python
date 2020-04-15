@@ -527,4 +527,4 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/git,macos,python,visualstudio,jupyternotebooks,visualstudiocode
 
 # Slack API token
-Slack Test/token.txt
+SlackTest/token.txt
